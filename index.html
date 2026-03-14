@@ -1,304 +1,667 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Petro Mahra | Excellence in General Contracting</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#e42127",
-                        "background-light": "#f8f6f6",
-                        "background-dark": "#120a0a",
-                        "surface-dark": "#1c1111",
-                        "accent-dark": "#2d1a1a"
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Petro Mahra | Excellence in General Contracting</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#e42127",
+              "background-light": "#f8f6f6",
+              "background-dark": "#120a0a",
+              "surface-dark": "#1c1111",
+              "accent-dark": "#2d1a1a",
             },
-        }
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-<style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .glass-effect {
-            background: rgba(28, 17, 17, 0.8);
-            backdrop-filter: blur(12px);
-        }
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .glass-effect {
+        background: rgba(28, 17, 17, 0.8);
+        backdrop-filter: blur(12px);
+      }
     </style>
-</head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white">
-<!-- Navigation -->
-<header class="fixed top-0 w-full z-50 border-b border-white/10 glass-effect">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-1.5 rounded">
-<span class="material-symbols-outlined text-white text-2xl">factory</span>
-</div>
-<span class="text-xl font-black tracking-tighter uppercase dark:text-white">Petro Mahra</span>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#home">Home</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#about">About</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#services">Services</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#clients">Clients</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#contact">Contact</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded text-sm font-bold uppercase tracking-wider transition-all">
-                    Get a Quote
-                </button>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="home">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent z-10"></div>
-<img alt="Industrial Background" class="w-full h-full object-cover" data-alt="Industrial oil refinery at sunset with glowing lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMnA8r5ShTPNMarW4mcRxHJX5j1NStQGq213At4A3qXt3JNPdoxRvJiEI_RPLspUKyKT8YKnwKFXSgQ88zZKjsO9ggReFqh4UDGApXByYyG5ZDyLFMGVU2RFB2y_6mTOa1ELk6NNgcOXBJFQBu9kB6TyqY_uSOOHCvIzDTOQmlr7QjN-FasKAU-xVFri8b1FsJIM1bAXF-dZzwV8LqbbxOgKoAHy7kvE3IkSnJTmUlzBpkCszCioiCcCeDe9nBDgN55Y3NtT0-bE"/>
-</div>
-<div class="relative z-20 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
-<div class="space-y-8">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 rounded text-primary text-xs font-bold uppercase tracking-widest">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-</span>
-                    Leading GCC Energy Infrastructure
-                </div>
-<h1 class="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter">
-                    EXCELLENCE IN <br/><span class="text-primary">GENERAL</span> <br/>CONTRACTING
-                </h1>
-<p class="text-lg text-slate-300 max-w-lg leading-relaxed font-light">
-                    Serving the energy landscape across KSA, UAE, and Qatar with precision engineering and world-class technical expertise.
-                </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded font-bold uppercase tracking-widest transition-all flex items-center gap-2">
-                        Explore Our Services <span class="material-symbols-outlined">trending_flat</span>
-</button>
-<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded font-bold uppercase tracking-widest transition-all">
-                        Corporate Profile
-                    </button>
-</div>
-</div>
-</div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden md:block">
-<div class="animate-bounce border border-white/20 rounded-full p-2">
-<span class="material-symbols-outlined text-white">keyboard_double_arrow_down</span>
-</div>
-</div>
-</section>
-<!-- About Section / GM Message -->
-<section class="py-24 bg-background-light dark:bg-background-dark" id="about">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid lg:grid-cols-12 gap-16 items-center">
-<div class="lg:col-span-5 relative">
-<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
-<div class="relative aspect-[4/5] rounded-xl overflow-hidden border border-white/10">
-<img alt="General Manager" class="w-full h-full object-cover" data-alt="Professional portrait of an executive leader in a corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALl2nXoOMT-MRcScQnovuasJcJFAlKArsg0oWmpSSLmLM7WranKhh9ClRQpMhPuhEUG7SwIYcaVNadoketXmPitEfZNeipyyRWL0olVdNW9-suv7w-XqTNRZ1s_t-Q2O-oqoBN1-4jSzX4pgpJiBotzpXOxxAmlVdWdG0qEzi5abmqwfPvIlKnPPCSPA25I-8MMwr4NoPxHC_aldVH7FZ7tVr47TG7-1mVSv8UmaNJNyDyk6CdSolLxRcs273hWeAb-N7Wn0SUlIY"/>
-<div class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-background-dark to-transparent">
-<p class="text-primary font-bold uppercase tracking-widest text-sm mb-1">Message from</p>
-<h3 class="text-2xl font-black text-white">Our General Manager</h3>
-</div>
-</div>
-</div>
-<div class="lg:col-span-7 space-y-6">
-<h2 class="text-primary font-black uppercase tracking-widest text-sm italic">Our Vision &amp; Leadership</h2>
-<h3 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight">A Hub for Exceptional Global Talent.</h3>
-<div class="w-20 h-1.5 bg-primary"></div>
-<div class="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-<p>
-                            "At Petro Mahra, we believe in being more than just a contractor. We are a strategic partner in the region's energy evolution. Our vision is to lead the contracting sector through innovation, safety, and unparalleled precision."
-                        </p>
-<p>
-                            "We have built a culture that attracts the industry's finest engineers and specialists, creating a hub of excellence that delivers complex projects across the GCC with zero compromise on quality."
-                        </p>
-</div>
-<div class="grid grid-cols-3 gap-8 pt-8 border-t border-slate-200 dark:border-white/10">
-<div>
-<div class="text-3xl font-black text-primary">15+</div>
-<div class="text-xs font-bold uppercase tracking-widest text-slate-500">Years Experience</div>
-</div>
-<div>
-<div class="text-3xl font-black text-primary">200+</div>
-<div class="text-xs font-bold uppercase tracking-widest text-slate-500">Projects Done</div>
-</div>
-<div>
-<div class="text-3xl font-black text-primary">KSA/UAE/QAT</div>
-<div class="text-xs font-bold uppercase tracking-widest text-slate-500">Regional Presence</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="py-24 bg-slate-50 dark:bg-surface-dark" id="services">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-<h2 class="text-primary font-black uppercase tracking-widest text-sm">Capabilities</h2>
-<h3 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic uppercase">Specialized Solutions</h3>
-<p class="text-slate-600 dark:text-slate-400">Integrated technical services designed for the most demanding environments in the energy and infrastructure sectors.</p>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 dark:bg-white/10 border border-slate-200 dark:border-white/10 overflow-hidden rounded-xl">
-<!-- Service 1 -->
-<div class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors">precision_manufacturing</span>
-<h4 class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase">Drilling Services</h4>
-<p class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6">Advanced onshore and offshore drilling operations utilizing next-gen automated rigs.</p>
-<a class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest" href="#">Read More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-<!-- Service 2 -->
-<div class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors">waves</span>
-<h4 class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase">Seismic Acquisition</h4>
-<p class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6">Precision geological data gathering with industry-leading seismic imaging technology.</p>
-<a class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest" href="#">Read More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-<!-- Service 3 -->
-<div class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors">construction</span>
-<h4 class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase">Heavy Equipment</h4>
-<p class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6">Comprehensive fleet management and deployment of heavy industrial machinery.</p>
-<a class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest" href="#">Read More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-<!-- Service 4 -->
-<div class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors">local_shipping</span>
-<h4 class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase">Logistics &amp; Transport</h4>
-<p class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6">Complex heavy-haul transportation and site supply chain optimization.</p>
-<a class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest" href="#">Read More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-<!-- Service 5 -->
-<div class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors">apartment</span>
-<h4 class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase">Civil Construction</h4>
-<p class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6">End-to-end industrial construction for processing plants and infrastructure.</p>
-<a class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest" href="#">Read More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-<!-- Service 6 -->
-<div class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors">security</span>
-<h4 class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase">HSE Compliance</h4>
-<p class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6">World-class health, safety, and environmental protection protocols.</p>
-<a class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest" href="#">Read More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-</div>
-</section>
-<!-- Clients Section -->
-<section class="py-24 bg-background-light dark:bg-background-dark" id="clients">
-<div class="max-w-7xl mx-auto px-6">
-<h2 class="text-center text-slate-500 dark:text-slate-400 font-bold uppercase tracking-[0.3em] text-xs mb-12">Trusted by Global Giants</h2>
-<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24">
-<div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2">
-<span class="text-2xl font-black dark:text-white">Saudi Aramco</span>
-</div>
-<div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2">
-<span class="text-2xl font-black dark:text-white">ADNOC</span>
-</div>
-<div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2">
-<span class="text-2xl font-black dark:text-white">Qatar Energy</span>
-</div>
-<div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2">
-<span class="text-2xl font-black dark:text-white">SABIC</span>
-</div>
-<div class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2">
-<span class="text-2xl font-black dark:text-white">NEOM</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Map/CTA Section -->
-<section class="relative py-20 bg-primary overflow-hidden">
-<div class="absolute inset-0 opacity-10">
-<img alt="Global Presence Map" class="w-full h-full object-cover" data-alt="Monochrome world map showing global connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeNLLtYExH1KMdpVMIXjA8d1uyzG0PL8MLkR8YY5khEuPhIFUzuJj_1b1wmFSr7EZ_0-bQ3h2-JadqSgJNjtDupoOWVLHJLoFYj_inaJkjczC9wvPfzpycmZYAhopWOcrTQBaIx-EjaB21ZBgHqb1MJeXPVENHCiHMJ_owJXjjbuzXJvcp6EsaRLWgeZSxSgRdRbNqPnxBbP6D8QOhXglhgwAa7xsuZ_V9HURUWkbgjPD8-i9GOgp3NbGfbMyAlqiApnwb11OEiKM"/>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
-<h3 class="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter italic">Ready to Engineer the Future?</h3>
-<p class="text-xl mb-10 max-w-2xl mx-auto font-light">Join our growing list of partners across the GCC. Let's build the backbone of energy together.</p>
-<button class="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded font-black uppercase tracking-widest transition-all">
-                Request Service Proposal
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white"
+  >
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full z-50 border-b border-white/10 glass-effect"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div class="background-dark p-1.5 rounded">
+            <!-- <span class="material-symbols-outlined text-white text-2xl"
+              >factory</span
+            > -->
+            <img src="images/logos/logo_petromahra.png" class="w-14 ">
+          </div>
+          <span
+            class="text-xl font-black tracking-tighter uppercase dark:text-white"
+            >Petro Mahra</span
+          >
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="#clients"
+            >Clients</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded text-sm font-bold uppercase tracking-wider transition-all"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      id="home"
+    >
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent z-10"
+        ></div>
+        <img
+          alt="Industrial Background"
+          class="w-full h-full object-cover"
+          data-alt="Industrial oil refinery at sunset with glowing lights"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMnA8r5ShTPNMarW4mcRxHJX5j1NStQGq213At4A3qXt3JNPdoxRvJiEI_RPLspUKyKT8YKnwKFXSgQ88zZKjsO9ggReFqh4UDGApXByYyG5ZDyLFMGVU2RFB2y_6mTOa1ELk6NNgcOXBJFQBu9kB6TyqY_uSOOHCvIzDTOQmlr7QjN-FasKAU-xVFri8b1FsJIM1bAXF-dZzwV8LqbbxOgKoAHy7kvE3IkSnJTmUlzBpkCszCioiCcCeDe9nBDgN55Y3NtT0-bE"
+        />
+      </div>
+      <div
+        class="relative z-20 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12"
+      >
+        <div class="space-y-8">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 rounded text-primary text-xs font-bold uppercase tracking-widest"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+              ></span>
+            </span>
+            Leading GCC Energy Infrastructure
+          </div>
+          <h1
+            class="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter"
+          >
+            EXCELLENCE IN <br /><span class="text-primary">GENERAL</span>
+            <br />CONTRACTING
+          </h1>
+          <p class="text-lg text-slate-300 max-w-lg leading-relaxed font-light">
+            Serving the energy landscape across KSA, UAE, and Qatar with
+            precision engineering and world-class technical expertise.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <button
+              class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded font-bold uppercase tracking-widest transition-all flex items-center gap-2"
+            >
+              Explore Our Services
+              <span class="material-symbols-outlined">trending_flat</span>
             </button>
-</div>
-</section>
-<!-- Footer / Contact Section -->
-<footer class="pt-24 pb-12 bg-surface-dark border-t border-white/5" id="contact">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-<div class="space-y-6">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-1.5 rounded">
-<span class="material-symbols-outlined text-white text-2xl">factory</span>
-</div>
-<span class="text-xl font-black tracking-tighter uppercase text-white">Petro Mahra</span>
-</div>
-<p class="text-slate-400 text-sm leading-relaxed">
-                    General contracting leader providing specialized engineering solutions to the GCC energy sector since 2008.
+            <button
+              class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded font-bold uppercase tracking-widest transition-all"
+            >
+              Corporate Profile
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden md:block"
+      >
+        <div class="animate-bounce border border-white/20 rounded-full p-2">
+          <span class="material-symbols-outlined text-white"
+            >keyboard_double_arrow_down</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About Section / GM Message -->
+    <section
+      class="py-24 bg-background-light dark:bg-background-dark"
+      id="about"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-5 relative">
+            <div
+              class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="relative aspect-[4/5] rounded-xl overflow-hidden border border-white/10"
+            >
+              <img
+                alt="General Manager"
+                class="w-full h-full object-cover"
+                data-alt="Professional portrait of an executive leader in a corporate setting"
+                src="images/seed2.jpeg"
+              />
+              <div
+                class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-background-dark to-transparent"
+              >
+                <p
+                  class="text-primary font-bold uppercase tracking-widest text-sm mb-1"
+                >
+                  Message from
                 </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
-<span class="material-symbols-outlined text-white text-sm">link</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
-<span class="material-symbols-outlined text-white text-sm">groups</span>
-</a>
-</div>
-</div>
-<div class="space-y-6">
-<h5 class="text-white font-black uppercase tracking-widest text-sm">Quick Links</h5>
-<ul class="space-y-4 text-slate-400 text-sm">
-<li><a class="hover:text-primary transition-colors" href="#">Company Overview</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Recent Projects</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">HSE Standards</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-</ul>
-</div>
-<div class="space-y-6 lg:col-span-2">
-<h5 class="text-white font-black uppercase tracking-widest text-sm">Regional Offices</h5>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="space-y-2">
-<p class="text-primary font-bold text-xs uppercase">Riyadh, KSA</p>
-<p class="text-slate-400 text-xs">King Fahd Branch Rd, Al Mohammadiyyah</p>
-</div>
-<div class="space-y-2">
-<p class="text-primary font-bold text-xs uppercase">Abu Dhabi, UAE</p>
-<p class="text-slate-400 text-xs">Sheikh Zayed Bin Sultan St, Al Zahiyah</p>
-</div>
-<div class="space-y-2">
-<p class="text-primary font-bold text-xs uppercase">Doha, Qatar</p>
-<p class="text-slate-400 text-xs">Al Corniche St, West Bay Tower</p>
-</div>
-</div>
-<div class="pt-6 border-t border-white/5">
-<p class="text-slate-400 text-sm flex items-center gap-2 italic">
-<span class="material-symbols-outlined text-primary text-sm">mail</span> 
-                        admin.ksa@petromahra.com
-                    </p>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-slate-500 text-xs">© 2024 Petro Mahra General Contracting. All rights reserved.</p>
-<div class="flex gap-8 text-slate-500 text-xs uppercase font-bold tracking-widest">
-<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
-</div>
-</div>
-</footer>
-</body></html>
+                <h3 class="text-2xl font-black text-white">
+                  Our General Manager
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 space-y-6">
+            <h2
+              class="text-primary font-black uppercase tracking-widest text-sm italic"
+            >
+              Our Vision &amp; Leadership
+            </h2>
+            <h3
+              class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight"
+            >
+              A Hub for Exceptional Global Talent.
+            </h3>
+            <div class="w-20 h-1.5 bg-primary"></div>
+            <div
+              class="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
+            >
+              <p>
+                "At Petro Mahra, we believe in being more than just a
+                contractor. We are a strategic partner in the region's energy
+                evolution. Our vision is to lead the contracting sector through
+                innovation, safety, and unparalleled precision."
+              </p>
+              <p>
+                "We have built a culture that attracts the industry's finest
+                engineers and specialists, creating a hub of excellence that
+                delivers complex projects across the GCC with zero compromise on
+                quality."
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-3 gap-8 pt-8 border-t border-slate-200 dark:border-white/10"
+            >
+              <div>
+                <div class="text-3xl font-black text-primary">15+</div>
+                <div
+                  class="text-xs font-bold uppercase tracking-widest text-slate-500"
+                >
+                  Years Experience
+                </div>
+              </div>
+              <div>
+                <div class="text-3xl font-black text-primary">200+</div>
+                <div
+                  class="text-xs font-bold uppercase tracking-widest text-slate-500"
+                >
+                  Projects Done
+                </div>
+              </div>
+              <div>
+                <div class="text-3xl font-black text-primary">KSA/UAE/QAT</div>
+                <div
+                  class="text-xs font-bold uppercase tracking-widest text-slate-500"
+                >
+                  Regional Presence
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-24 bg-slate-50 dark:bg-surface-dark" id="services">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-primary font-black uppercase tracking-widest text-sm">
+            Capabilities
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic uppercase"
+          >
+            Specialized Solutions
+          </h3>
+          <p class="text-slate-600 dark:text-slate-400">
+            Integrated technical services designed for the most demanding
+            environments in the energy and infrastructure sectors.
+          </p>
+        </div>
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 dark:bg-white/10 border border-slate-200 dark:border-white/10 overflow-hidden rounded-xl"
+        >
+          <!-- Service 1 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >precision_manufacturing</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Drilling Services
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6"
+            >
+              Advanced onshore and offshore drilling operations utilizing
+              next-gen automated rigs.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest"
+              href="#"
+              >Read More
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+          <!-- Service 2 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >waves</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Seismic Acquisition
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6"
+            >
+              Precision geological data gathering with industry-leading seismic
+              imaging technology.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest"
+              href="#"
+              >Read More
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+          <!-- Service 3 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >construction</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Heavy Equipment
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6"
+            >
+              Comprehensive fleet management and deployment of heavy industrial
+              machinery.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest"
+              href="#"
+              >Read More
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+          <!-- Service 4 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >local_shipping</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Logistics &amp; Transport
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6"
+            >
+              Complex heavy-haul transportation and site supply chain
+              optimization.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest"
+              href="#"
+              >Read More
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+          <!-- Service 5 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >apartment</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Civil Construction
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6"
+            >
+              End-to-end industrial construction for processing plants and
+              infrastructure.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest"
+              href="#"
+              >Read More
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+          <!-- Service 6 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >security</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              HSE Compliance
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed mb-6"
+            >
+              World-class health, safety, and environmental protection
+              protocols.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 text-primary group-hover:text-white font-bold uppercase text-xs tracking-widest"
+              href="#"
+              >Read More
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Section -->
+    <section
+      class="py-24 bg-background-light dark:bg-background-dark"
+      id="clients"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <h2
+          class="text-center text-slate-500 dark:text-slate-400 font-bold uppercase tracking-[0.3em] text-xs mb-12"
+        >
+          Trusted by Global Giants
+        </h2>
+        <div
+          class="flex flex-wrap justify-center items-center gap-12 md:gap-24"
+        >
+          <div
+            class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2"
+          >
+            <span class="text-2xl font-black dark:text-white"
+              >Saudi Aramco</span
+            >
+          </div>
+          <div
+            class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2"
+          >
+            <span class="text-2xl font-black dark:text-white">ADNOC</span>
+          </div>
+          <div
+            class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2"
+          >
+            <span class="text-2xl font-black dark:text-white"
+              >Qatar Energy</span
+            >
+          </div>
+          <div
+            class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2"
+          >
+            <span class="text-2xl font-black dark:text-white">SABIC</span>
+          </div>
+          <div
+            class="grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center gap-2"
+          >
+            <span class="text-2xl font-black dark:text-white">NEOM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Map/CTA Section -->
+    <section class="relative py-20 bg-primary overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <img
+          alt="Global Presence Map"
+          class="w-full h-full object-cover"
+          data-alt="Monochrome world map showing global connectivity"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeNLLtYExH1KMdpVMIXjA8d1uyzG0PL8MLkR8YY5khEuPhIFUzuJj_1b1wmFSr7EZ_0-bQ3h2-JadqSgJNjtDupoOWVLHJLoFYj_inaJkjczC9wvPfzpycmZYAhopWOcrTQBaIx-EjaB21ZBgHqb1MJeXPVENHCiHMJ_owJXjjbuzXJvcp6EsaRLWgeZSxSgRdRbNqPnxBbP6D8QOhXglhgwAa7xsuZ_V9HURUWkbgjPD8-i9GOgp3NbGfbMyAlqiApnwb11OEiKM"
+        />
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+        <h3
+          class="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter italic"
+        >
+          Ready to Engineer the Future?
+        </h3>
+        <p class="text-xl mb-10 max-w-2xl mx-auto font-light">
+          Join our growing list of partners across the GCC. Let's build the
+          backbone of energy together.
+        </p>
+        <button
+          class="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded font-black uppercase tracking-widest transition-all"
+        >
+          Request Service Proposal
+        </button>
+      </div>
+    </section>
+    <!-- Footer / Contact Section -->
+    <footer
+      class="pt-24 pb-12 bg-surface-dark border-t border-white/5"
+      id="contact"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
+      >
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="background-dark p-1.5 rounded">
+             <img src="images/logos/logo_petromahra.png" class="w-14 ">
+            </div>
+            <span
+              class="text-xl font-black tracking-tighter uppercase text-white"
+              >Petro Mahra</span
+            >
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            General contracting leader providing specialized engineering
+            solutions to the GCC energy sector since 2008.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-white text-sm"
+                >link</span
+              >
+            </a>
+            <a
+              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-white text-sm"
+                >groups</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h5 class="text-white font-black uppercase tracking-widest text-sm">
+            Quick Links
+          </h5>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Company Overview</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Recent Projects</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >HSE Standards</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6 lg:col-span-2">
+          <h5 class="text-white font-black uppercase tracking-widest text-sm">
+            Regional Offices
+          </h5>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Riyadh, KSA
+              </p>
+              <p class="text-slate-400 text-xs">
+                King Fahd Branch Rd, Al Mohammadiyyah
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Abu Dhabi, UAE
+              </p>
+              <p class="text-slate-400 text-xs">
+                Sheikh Zayed Bin Sultan St, Al Zahiyah
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Doha, Qatar
+              </p>
+              <p class="text-slate-400 text-xs">
+                Al Corniche St, West Bay Tower
+              </p>
+            </div>
+          </div>
+          <div class="pt-6 border-t border-white/5">
+            <p class="text-slate-400 text-sm flex items-center gap-2 italic">
+              <span class="material-symbols-outlined text-primary text-sm"
+                >mail</span
+              >
+              admin.ksa@petromahra.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-slate-500 text-xs">
+          © 2024 Petro Mahra General Contracting. All rights reserved.
+        </p>
+        <div
+          class="flex gap-8 text-slate-500 text-xs uppercase font-bold tracking-widest"
+        >
+          <a class="hover:text-white transition-colors" href="#"
+            >Privacy Policy</a
+          >
+          <a class="hover:text-white transition-colors" href="#"
+            >Terms of Service</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
