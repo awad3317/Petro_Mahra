@@ -2,6 +2,7 @@
 
 <html class="dark" lang="en">
   <head>
+    <script src="assets/js/theme-toggle.js"></script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Petro Mahra | Excellence in General Contracting</title>
@@ -512,161 +513,79 @@
       </div>
     </section>
     <!-- Footer / Contact Section -->
-    <footer
-      class="pt-24 pb-12 bg-surface-dark border-t border-white/5"
-      id="contact"
-    >
-      <div
-        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
-      >
-        <div class="space-y-6">
-          <div class="flex items-center gap-3">
-            <div class="background-dark p-1.5 rounded">
-             <img src="images/logos/logo_petromahra.png" class="w-14 ">
-            </div>
-            <span
-              class="text-xl font-black tracking-tighter uppercase text-white"
-              >Petro Mahra</span
-            >
-          </div>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            General contracting leader providing specialized engineering
-            solutions to the GCC energy sector since 2008.
-          </p>
-          <div class="flex gap-4">
-            <a
-              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
-              href="#"
-            >
-              <span class="material-symbols-outlined text-white text-sm"
-                >link</span
-              >
-            </a>
-            <a
-              class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"
-              href="#"
-            >
-              <span class="material-symbols-outlined text-white text-sm"
-                >groups</span
-              >
-            </a>
-          </div>
-        </div>
-        <div class="space-y-6">
-          <h5 class="text-white font-black uppercase tracking-widest text-sm">
-            Quick Links
-          </h5>
-          <ul class="space-y-4 text-slate-400 text-sm">
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Company Overview</a
-              >
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Recent Projects</a
-              >
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >HSE Standards</a
-              >
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Careers</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-6 lg:col-span-2">
-          <h5 class="text-white font-black uppercase tracking-widest text-sm">
-            Regional Offices
-          </h5>
-          <div class="grid grid grid-cols-1 gap-6">
-            <div class="space-y-2">
-              <p class="text-primary font-bold text-xs uppercase">
-                Riyadh, KSA
-              </p>
-              <p class="text-slate-400 text-xs">
-                King Fahd Branch Rd, Al Mohammadiyyah
-              </p>
-            </div>
-            <div class="space-y-2">
-              <p class="text-primary font-bold text-xs uppercase">
-                Abu Dhabi, UAE
-              </p>
-              <p class="text-slate-400 text-xs">
-                Sheikh Zayed Bin Sultan St, Al Zahiyah
-              </p>
-            </div>
-            <div class="space-y-2">
-              <p class="text-primary font-bold text-xs uppercase">
-                Doha, Qatar
-              </p>
-              <p class="text-slate-400 text-xs">
-                Al Corniche St, West Bay Tower
-              </p>
-            </div>
-          </div>
-          <div class="pt-6 border-t border-white/5">
-            <p class="text-slate-400 text-sm flex items-center gap-2 italic">
-              <span class="material-symbols-outlined text-primary text-sm"
-                >mail</span
-              >
-              admin.ksa@petromahra.com
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4"
-      >
-        <p class="text-slate-500 text-xs">
-          © 2024 Petro Mahra General Contracting. All rights reserved.
-        </p>
-        <div
-          class="flex gap-8 text-slate-500 text-xs uppercase font-bold tracking-widest"
-        >
-          <a class="hover:text-white transition-colors" href="#"
-            >Privacy Policy</a
-          >
-          <a class="hover:text-white transition-colors" href="#"
-            >Terms of Service</a
-          >
-        </div>
-      </div>
-    </footer>
-    <script>
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  const darkIcon = document.getElementById('theme-toggle-dark-icon');
-  const lightIcon = document.getElementById('theme-toggle-light-icon');
-
-  // فحص الوضع الحالي عند تحميل الصفحة
-  if (document.documentElement.classList.contains('dark')) {
-    lightIcon.classList.remove('hidden');
-    darkIcon.classList.add('hidden');
-  } else {
-    lightIcon.classList.add('hidden');
-    darkIcon.classList.remove('hidden');
-  }
-
-  // وظيفة التبديل عند الضغط على الزر
-  themeToggleBtn.addEventListener('click', function() {
-    // تبديل الكلاس dark في عنصر الـ html
-    document.documentElement.classList.toggle('dark');
+    <footer class="pt-24 pb-12 bg-slate-50 dark:bg-surface-dark border-t border-slate-200 dark:border-white/5 transition-colors duration-300" id="contact">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
     
-    // تبديل الأيقونات
-    darkIcon.classList.toggle('hidden');
-    lightIcon.classList.toggle('hidden');
+    <div class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="bg-background-dark p-1.5 rounded shadow-sm">
+          <img src="images/logos/logo_petromahra.png" class="w-14">
+        </div>
+        <span class="text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white">
+          Petro Mahra
+        </span>
+      </div>
+      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+        General contracting leader providing specialized engineering solutions to the GCC energy sector since 2008.
+      </p>
+      <div class="flex gap-4">
+        <a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center hover:bg-primary transition-colors group" href="#">
+          <span class="material-symbols-outlined text-slate-600 dark:text-white group-hover:text-white text-sm">link</span>
+        </a>
+        <a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center hover:bg-primary transition-colors group" href="#">
+          <span class="material-symbols-outlined text-slate-600 dark:text-white group-hover:text-white text-sm">groups</span>
+        </a>
+      </div>
+    </div>
 
-    // حفظ الخيار في Local Storage
-    if (document.documentElement.classList.contains('dark')) {
-      localStorage.setItem('color-theme', 'dark');
-    } else {
-      localStorage.setItem('color-theme', 'light');
-    }
-  });
-</script>
+    <div class="space-y-6">
+      <h5 class="text-slate-900 dark:text-white font-black uppercase tracking-widest text-sm">
+        Quick Links
+      </h5>
+      <ul class="space-y-4 text-slate-600 dark:text-slate-400 text-sm">
+        <li><a class="hover:text-primary transition-colors" href="#">Company Overview</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Recent Projects</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">HSE Standards</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-6 lg:col-span-2">
+      <h5 class="text-slate-900 dark:text-white font-black uppercase tracking-widest text-sm">
+        Regional Offices
+      </h5>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="space-y-2">
+          <p class="text-primary font-bold text-xs uppercase">Riyadh, KSA</p>
+          <p class="text-slate-600 dark:text-slate-400 text-xs">King Fahd Branch Rd, Al Mohammadiyyah</p>
+        </div>
+        <div class="space-y-2">
+          <p class="text-primary font-bold text-xs uppercase">Abu Dhabi, UAE</p>
+          <p class="text-slate-600 dark:text-slate-400 text-xs">Sheikh Zayed Bin Sultan St, Al Zahiyah</p>
+        </div>
+        <div class="space-y-2">
+          <p class="text-primary font-bold text-xs uppercase">Doha, Qatar</p>
+          <p class="text-slate-600 dark:text-slate-400 text-xs">Al Corniche St, West Bay Tower</p>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-slate-200 dark:border-white/5">
+        <p class="text-slate-600 dark:text-slate-400 text-sm flex items-center gap-2 italic">
+          <span class="material-symbols-outlined text-primary text-sm">mail</span>
+          admin.ksa@petromahra.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-slate-500 text-xs">
+      © 2024 Petro Mahra General Contracting. All rights reserved.
+    </p>
+    <div class="flex gap-8 text-slate-500 text-xs uppercase font-bold tracking-widest">
+      <a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+      <a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
   </body>
 </html>
