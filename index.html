@@ -51,6 +51,10 @@
         background: rgba(28, 17, 17, 0.8);
         backdrop-filter: blur(12px);
       }
+      .glass-effect {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
     </style>
   </head>
   <body
@@ -58,59 +62,35 @@
   >
     <!-- Navigation -->
     <header
-      class="fixed top-0 w-full z-50 border-b border-white/10 glass-effect"
-    >
-      <div
-        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
-      >
-        <div class="flex items-center gap-3">
-          <div class="background-dark p-1.5 rounded">
-            <!-- <span class="material-symbols-outlined text-white text-2xl"
-              >factory</span
-            > -->
-            <img src="images/logos/logo_petromahra.png" class="w-14 ">
-          </div>
-          <span
-            class="text-xl font-black tracking-tighter uppercase dark:text-white"
-            >Petro Mahra</span
-          >
-        </div>
-        <nav class="hidden md:flex items-center gap-10">
-          <a
-            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-            href="#home"
-            >Home</a
-          >
-          <a
-            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-            href="#about"
-            >About</a
-          >
-          <a
-            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-            href="#services"
-            >Services</a
-          >
-          <a
-            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-            href="#clients"
-            >Clients</a
-          >
-          <a
-            class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest"
-            href="#contact"
-            >Contact</a
-          >
-        </nav>
-        <div class="flex items-center gap-4">
-          <button
-            class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded text-sm font-bold uppercase tracking-wider transition-all"
-          >
-            Get a Quote
-          </button>
-        </div>
+  class="fixed top-0 w-full z-50 border-b border-black/5 dark:border-white/10 glass-effect bg-white/70 dark:bg-surface-dark/80 transition-colors duration-300"
+>
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="bg-background-dark p-1.5 rounded shrink-0">
+        <img src="images/logos/logo_petromahra.png" class="w-12 sm:w-14">
       </div>
-    </header>
+      <span class="text-lg sm:text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white">
+        Petro Mahra
+      </span>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-8 lg:gap-10">
+      <a class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest" href="#home">Home</a>
+      <a class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest" href="#about">About</a>
+      <a class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest" href="#services">Services</a>
+      <a class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest" href="#clients">Clients</a>
+      <a class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest" href="#contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <button id="theme-toggle" class="p-2 rounded-full bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-yellow-400 hover:scale-110 transition-all duration-300 flex items-center justify-center">
+        <span id="theme-toggle-light-icon" class="material-symbols-outlined !text-[20px] hidden">light_mode</span>
+        <span id="theme-toggle-dark-icon" class="material-symbols-outlined !text-[20px]">dark_mode</span>
+      </button>
+     
+    </div>
+  </div>
+</header>
     <!-- Hero Section -->
     <section
       class="relative min-h-screen flex items-center pt-20 overflow-hidden"
@@ -657,5 +637,36 @@
         </div>
       </div>
     </footer>
+    <script>
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const darkIcon = document.getElementById('theme-toggle-dark-icon');
+  const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+  // فحص الوضع الحالي عند تحميل الصفحة
+  if (document.documentElement.classList.contains('dark')) {
+    lightIcon.classList.remove('hidden');
+    darkIcon.classList.add('hidden');
+  } else {
+    lightIcon.classList.add('hidden');
+    darkIcon.classList.remove('hidden');
+  }
+
+  // وظيفة التبديل عند الضغط على الزر
+  themeToggleBtn.addEventListener('click', function() {
+    // تبديل الكلاس dark في عنصر الـ html
+    document.documentElement.classList.toggle('dark');
+    
+    // تبديل الأيقونات
+    darkIcon.classList.toggle('hidden');
+    lightIcon.classList.toggle('hidden');
+
+    // حفظ الخيار في Local Storage
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.setItem('color-theme', 'dark');
+    } else {
+      localStorage.setItem('color-theme', 'light');
+    }
+  });
+</script>
   </body>
 </html>
