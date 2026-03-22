@@ -1,0 +1,528 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <script src="assets/js/theme-toggle.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Services | Petro Mahra</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#e42127",
+              "background-light": "#f8f6f6",
+              "background-dark": "#120a0a",
+              "surface-dark": "#1c1111",
+              "accent-dark": "#2d1a1a",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .glass-effect {
+        background: rgba(28, 17, 17, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+      }
+      .delay-100 {
+        animation-delay: 100ms;
+      }
+      .delay-200 {
+        animation-delay: 200ms;
+      }
+      .delay-300 {
+        animation-delay: 300ms;
+      }
+      .delay-400 {
+        animation-delay: 400ms;
+      }
+      .delay-500 {
+        animation-delay: 500ms;
+      }
+    </style>
+  </head>
+  <body
+    class="overflow-x-hidden bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white"
+  >
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full z-50 border-b border-black/5 dark:border-white/10 glass-effect bg-white/70 dark:bg-surface-dark/80 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div class="p-1.5 rounded shrink-0">
+            <img src="images/logos/logo_petromahra.png" class="w-12 sm:w-14" />
+          </div>
+          <span
+            class="text-lg sm:text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white"
+            >Petro Mahra</span
+          >
+        </div>
+        <nav class="hidden md:flex items-center gap-8 lg:gap-10">
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="text-xs font-bold text-primary transition-colors uppercase tracking-widest"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="projects.html"
+            >Projects</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-full bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-yellow-400 hover:scale-110 transition-all duration-300 flex items-center justify-center"
+          >
+            <span
+              id="theme-toggle-light-icon"
+              class="material-symbols-outlined !text-[20px] hidden"
+              >light_mode</span
+            >
+            <span
+              id="theme-toggle-dark-icon"
+              class="material-symbols-outlined !text-[20px]"
+              >dark_mode</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative pt-80 pb-60 bg-background-dark overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-40">
+        <img
+          alt="Our Services"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMnA8r5ShTPNMarW4mcRxHJX5j1NStQGq213At4A3qXt3JNPdoxRvJiEI_RPLspUKyKT8YKnwKFXSgQ88zZKjsO9ggReFqh4UDGApXByYyG5ZDyLFMGVU2RFB2y_6mTOa1ELk6NNgcOXBJFQBu9kB6TyqY_uSOOHCvIzDTOQmlr7QjN-FasKAU-xVFri8b1FsJIM1bAXF-dZzwV8LqbbxOgKoAHy7kvE3IkSnJTmUlzBpkCszCioiCcCeDe9nBDgN55Y3NtT0-bE"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"
+        ></div>
+      </div>
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 text-center animate-fade-in-up"
+      >
+        <h1
+          class="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4"
+        >
+          Our Services
+        </h1>
+        <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto font-light">
+          Integrated technical services designed for the most demanding
+          environments
+        </p>
+      </div>
+    </section>
+
+    <!-- Industry Sectors Section -->
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-in-up"
+        >
+          <h2 class="text-primary font-black uppercase tracking-widest text-sm">
+            Industries
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic uppercase"
+          >
+            Where We Work
+          </h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white dark:bg-surface-dark p-8 rounded-xl border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors group animate-fade-in-up delay-100"
+          >
+            <h4
+              class="text-4xl font-black text-slate-200 dark:text-white/10 mb-4 group-hover:text-primary/20 transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+                >oil_barrel</span
+              >
+            </h4>
+            <h5
+              class="text-xl font-black text-slate-900 dark:text-white mb-4 uppercase"
+            >
+              Offshore Facilities
+            </h5>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              We provide comprehensive technical services for offshore
+              facilities, including maintenance, repair, and installation of
+              equipment and systems.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-surface-dark p-8 rounded-xl border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors group animate-fade-in-up delay-200"
+          >
+            <h4
+              class="text-4xl font-black text-slate-200 dark:text-white/10 mb-4 group-hover:text-primary/20 transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+                >factory</span
+              >
+            </h4>
+            <h5
+              class="text-xl font-black text-slate-900 dark:text-white mb-4 uppercase"
+            >
+              Onshore Facilities
+            </h5>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              Petrol Mahra helps customers optimize the performance of critical
+              oil and gas assets and equipment. We draw on an extensive software
+              portfolio, deep expertise in data analytics and extensive
+              experience in oil and gas and other industries.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-surface-dark p-8 rounded-xl border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors group animate-fade-in-up delay-300"
+          >
+            <h4
+              class="text-4xl font-black text-slate-200 dark:text-white/10 mb-4 group-hover:text-primary/20 transition-colors"
+            >
+              
+              <span
+                class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+                >construction</span
+              >
+            </h4>
+            <h5
+              class="text-xl font-black text-slate-900 dark:text-white mb-4 uppercase"
+            >
+              Construction
+            </h5>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              Operational excellence and strong capabilities mean that we can
+              deliver complex construction projects, whether these developments
+              are greenfield or brownfield, onshore or offshore, upstream or
+              downstream
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-surface-dark p-8 rounded-xl border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors group animate-fade-in-up delay-400"
+          >
+            <h4
+              class="text-4xl font-black text-slate-200 dark:text-white/10 mb-4 group-hover:text-primary/20 transition-colors"
+            >
+              
+              <span
+                class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+                >precision_manufacturing</span
+              > 
+            </h4>
+            <h5
+              class="text-xl font-black text-slate-900 dark:text-white mb-4 uppercase"
+            >
+              Engineering
+            </h5>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
+            >
+              We provide life-of-asset engineering capabilities for brownfield
+              and greenfield projects; from consultancy services through concept
+              and FEED into detailed design, procurement and commissioning. This
+              capability extends into late life and decommissioning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section
+      class="py-24 bg-slate-50 dark:bg-surface-dark border-t border-slate-200 dark:border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-in-up"
+        >
+          <h2 class="text-primary font-black uppercase tracking-widest text-sm">
+            Capabilities
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic uppercase"
+          >
+            Services We Provide
+          </h3>
+        </div>
+
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 dark:bg-white/10 border border-slate-200 dark:border-white/10 overflow-hidden rounded-xl animate-fade-in-up delay-100"
+        >
+          <!-- Provide 1 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500 relative overflow-hidden"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >local_shipping</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Transportation
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed relative z-10"
+            >
+              We provide comprehensive transportation and rental services for a
+              wide range of earthmoving equipment and machinery. We also offer
+              reliable drinking and non-drinking water supply solutions.
+            </p>
+          </div>
+          <!-- Provide 2 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500 relative overflow-hidden"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >apartment</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Labour Facilities
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed relative z-10"
+            >
+              We provide compliant and well-managed labour facilities designed
+              to ensure worker safety, comfort, and regulatory adherence.
+            </p>
+          </div>
+          <!-- Provide 3 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500 relative overflow-hidden"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >precision_manufacturing</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Drilling
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed relative z-10"
+            >
+              Drilling fluids perform various functions. They lubricate drill
+              bits, remove cuttings, and provide a barrier for well control.
+            </p>
+          </div>
+          <!-- Provide 4 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500 relative overflow-hidden lg:col-span-1"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >developer_board</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Control Panel Assembly
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed relative z-10"
+            >
+              Professional assembly of electrical control panels for industrial
+              automation, ensuring safe, reliable, and efficient operation.
+            </p>
+          </div>
+          <!-- Provide 5 -->
+          <div
+            class="bg-background-light dark:bg-surface-dark p-10 group hover:bg-primary transition-all duration-500 relative overflow-hidden lg:col-span-2"
+          >
+            <span
+              class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6 transition-colors"
+              >construction</span
+            >
+            <h4
+              class="text-2xl font-black mb-4 dark:text-white group-hover:text-white tracking-tight uppercase"
+            >
+              Heavy Machines & Equipments
+            </h4>
+            <p
+              class="text-slate-600 dark:text-slate-400 group-hover:text-white/80 leading-relaxed relative z-10"
+            >
+              We provide a wide range of earthmoving equipment and heavy
+              vehicles to support construction, infrastructure, and industrial
+              projects. Our fleet includes excavators, wheel loaders,
+              bulldozers, graders, and many more, along with complete logistical
+              support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="pt-24 pb-12 bg-background-dark border-t border-slate-200 dark:border-white/5 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
+      >
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="p-1.5 rounded shadow-sm">
+              <img src="images/logos/logo_petromahra.png" class="w-14" />
+            </div>
+            <span
+              class="text-xl font-black tracking-tighter uppercase text-white"
+              >Petro Mahra</span
+            >
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            General contracting leader providing specialized engineering
+            solutions to the GCC energy sector since 2008.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <h5 class="text-white font-black uppercase tracking-widest text-sm">
+            Quick Links
+          </h5>
+          <ul class="space-y-4 text-slate-400 text-sm font-bold">
+            <li>
+              <a class="hover:text-primary transition-colors" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6 lg:col-span-2">
+          <h5 class="text-white font-black uppercase tracking-widest text-sm">
+            Regional Offices
+          </h5>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Riyadh, KSA
+              </p>
+              <p class="text-slate-400 text-xs">
+                +966 13 835 9551<br />admin.ksa@petromahra.com
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Abu Dhabi, UAE
+              </p>
+              <p class="text-slate-400 text-xs">
+                +971 2 555 0711<br />admin.ae@petromahra.com
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Doha, Qatar
+              </p>
+              <p class="text-slate-400 text-xs">
+                +974 4418 8955<br />admin.qa@petromahra.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-slate-500 text-xs">
+          © 2026 PETRO MAHRA. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

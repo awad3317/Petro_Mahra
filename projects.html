@@ -1,0 +1,599 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <script src="assets/js/theme-toggle.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Projects | Petro Mahra</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#e42127",
+              "background-light": "#f8f6f6",
+              "background-dark": "#120a0a",
+              "surface-dark": "#1c1111",
+              "accent-dark": "#2d1a1a",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .glass-effect {
+        background: rgba(28, 17, 17, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+      }
+      .delay-100 {
+        animation-delay: 100ms;
+      }
+      .delay-200 {
+        animation-delay: 200ms;
+      }
+      .delay-300 {
+        animation-delay: 300ms;
+      }
+      .delay-400 {
+        animation-delay: 400ms;
+      }
+      .delay-500 {
+        animation-delay: 500ms;
+      }
+      .delay-600 {
+        animation-delay: 600ms;
+      }
+      .delay-700 {
+        animation-delay: 700ms;
+      }
+      .delay-800 {
+        animation-delay: 800ms;
+      }
+    </style>
+  </head>
+  <body
+    class="overflow-x-hidden bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white"
+  >
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full z-50 border-b border-black/5 dark:border-white/10 glass-effect bg-white/70 dark:bg-surface-dark/80 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div class="p-1.5 rounded shrink-0">
+            <img src="images/logos/logo_petromahra.png" class="w-12 sm:w-14" />
+          </div>
+          <span
+            class="text-lg sm:text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white"
+            >Petro Mahra</span
+          >
+        </div>
+        <nav class="hidden md:flex items-center gap-8 lg:gap-10">
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="text-xs font-bold text-primary transition-colors uppercase tracking-widest"
+            href="projects.html"
+            >Projects</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-full bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-yellow-400 hover:scale-110 transition-all duration-300 flex items-center justify-center"
+          >
+            <span
+              id="theme-toggle-light-icon"
+              class="material-symbols-outlined !text-[20px] hidden"
+              >light_mode</span
+            >
+            <span
+              id="theme-toggle-dark-icon"
+              class="material-symbols-outlined !text-[20px]"
+              >dark_mode</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative pt-40 pb-20 bg-background-dark overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-40">
+        <img
+          alt="Our Projects"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYrUDpclEYk2XfvpxXjN3Q5ckVqNCFXFeTbGhX0mVtv2bef0kzJqwGUe5-8IyV27eBiu5N4hw6RZdg0VIpju6rfXgI1zseag0f06H6gJZaWosDO32Eo120qrvzrwm7fIBYLrxKJ5oqch8ytpoIOTqa0eF-Miu8YpcKbsUl0NDX8H32-kelVJx7q_7-JRy4SdhWUSzr43Qy4XXpECihinaNUpKZqvlKfIpuOjOElgRwRAh7nXA1emQ0u3EmGEAu88wMSHyUSdv7Sk"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"
+        ></div>
+      </div>
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 text-center animate-fade-in-up"
+      >
+        <h1
+          class="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4"
+        >
+          Our Projects
+        </h1>
+        <div class="w-24 h-1.5 bg-primary mx-auto mb-6"></div>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto font-light">
+          Showcasing our excellence and commitment through successful project
+          deliveries.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section
+      class="py-24 bg-background-light dark:bg-background-dark border-b border-slate-200 dark:border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-in-up"
+        >
+          <h2 class="text-primary font-black uppercase tracking-widest text-sm">
+            Portfolio
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic uppercase"
+          >
+            Recent & Completed Projects
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-100"
+          >
+            <div
+              class="h-56 overflow-hidden relative bg-slate-100 dark:bg-surface-dark"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-white/10 group-hover:scale-110 transition-transform duration-700"
+              >
+             <img src="images/oil-field-pumpjacks.jpg" alt="Shengi Drilling" class="w-full h-full object-cover" />
+              </div>
+              <div
+                class="absolute inset-0 bg-background-dark/10 group-hover:bg-transparent transition-colors duration-500"
+              >
+            
+            </div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded"
+              >
+                Drilling
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="text-xl font-black text-slate-900 dark:text-white mb-3"
+              >
+                Shengi Drilling & Huabei Drilling
+              </h3>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1"
+              >
+                Providing experienced drilling technicians including Roustabout,
+                Floor Man, Senior Driller & Assistant Drillers for operations in
+                Saudi Arabia.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between"
+              >
+                <span
+                  class="text-[10px] font-bold uppercase text-slate-500 dark:text-slate-400 tracking-widest"
+                  >Since 2014</span
+                >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-200"
+          >
+            <div
+              class="h-56 overflow-hidden relative bg-slate-100 dark:bg-surface-dark"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-white/10 group-hover:scale-110 transition-transform duration-700"
+              >
+              <img src="images/site-photo-20260116-21.jpeg" alt="Shengi Drilling" class="w-full h-full object-cover" />
+              </div>
+              <div
+                class="absolute inset-0 bg-background-dark/10 group-hover:bg-transparent transition-colors duration-500"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded"
+              >
+                Seismic
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="text-xl font-black text-slate-900 dark:text-white mb-3"
+              >
+                Seismic Project: Crew85, 87 & 88
+              </h3>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1"
+              >
+                2D seismic data acquisition project S47 from Aramco. Providing
+                vibro operators, mechanics, and LTV/HTV drivers.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between"
+              >
+                <span
+                  class="text-[10px] font-bold uppercase text-slate-500 dark:text-slate-400 tracking-widest"
+                  >Client: Aramco</span
+                >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-300"
+          >
+            <div
+              class="h-56 overflow-hidden relative bg-slate-100 dark:bg-surface-dark"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-white/10 group-hover:scale-110 transition-transform duration-700"
+              >
+               <img src="images/site-photo-20260116-17.jpeg" alt="Shengi Drilling" class="w-full h-full object-cover" />
+              </div>
+              <div
+                class="absolute inset-0 bg-background-dark/10 group-hover:bg-transparent transition-colors duration-500"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded"
+              >
+                Seismic
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="text-xl font-black text-slate-900 dark:text-white mb-3"
+              >
+                Seismic Project: 8615
+              </h3>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1"
+              >
+                World's largest 3D seismic shoot awarded by ADNOC. Providing
+                vibro operators, line layout, and surveyors.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between"
+              >
+                <span
+                  class="text-[10px] font-bold uppercase text-slate-500 dark:text-slate-400 tracking-widest"
+                  >Client: ADNOC</span
+                >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-400"
+          >
+            <div
+              class="h-56 overflow-hidden relative bg-slate-100 dark:bg-surface-dark"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-white/10 group-hover:scale-110 transition-transform duration-700"
+              >
+           <img src="images/site-photo-20260116-54.jpeg" alt="Shengi Drilling" class="w-full h-full object-cover" />
+              </div>
+              <div
+                class="absolute inset-0 bg-background-dark/10 group-hover:bg-transparent transition-colors duration-500"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded"
+              >
+                Construction
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="text-xl font-black text-slate-900 dark:text-white mb-3"
+              >
+                Dhahran Villas Construction
+              </h3>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1"
+              >
+                Construction manpower for Saudi Aramco's Dhahran residential
+                developments, involving masons, tile fixers, and carpenters.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between"
+              >
+                <span
+                  class="text-[10px] font-bold uppercase text-slate-500 dark:text-slate-400 tracking-widest"
+                  >Client: Aramco</span
+                >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-500"
+          >
+            <div
+              class="h-56 overflow-hidden relative bg-slate-100 dark:bg-surface-dark"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-white/10 group-hover:scale-110 transition-transform duration-700"
+              >
+           <img src="images/misc-download-3.jpeg" alt="Shengi Drilling" class="w-full h-full object-cover" />
+            </div>
+              <div
+                class="absolute inset-0 bg-background-dark/10 group-hover:bg-transparent transition-colors duration-500"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded"
+              >
+                Power Systems
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="text-xl font-black text-slate-900 dark:text-white mb-3"
+              >
+                Riyadh Electric Tower Project
+              </h3>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1"
+              >
+                Providing heavy transportation and specialized manpower for
+                SEPCO's Riyadh Electric Tower development.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between"
+              >
+                <span
+                  class="text-[10px] font-bold uppercase text-slate-500 dark:text-slate-400 tracking-widest"
+                  >Client: SEPCO</span
+                >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="group flex flex-col bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 animate-fade-in-up delay-600"
+          >
+            <div
+              class="h-56 overflow-hidden relative bg-slate-100 dark:bg-surface-dark"
+            >
+              <div
+                class="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-white/10 group-hover:scale-110 transition-transform duration-700"
+              >
+           <img src="images/site-photo-20260116-51.jpeg" alt="Shengi Drilling" class="w-full h-full object-cover" />
+              </div>
+              <div
+                class="absolute inset-0 bg-background-dark/10 group-hover:bg-transparent transition-colors duration-500"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded"
+              >
+                Infrastructure
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h3
+                class="text-xl font-black text-slate-900 dark:text-white mb-3"
+              >
+                Emirates Road Extension
+              </h3>
+              <p
+                class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1"
+              >
+                PA-134 Sharjah & PA-119/Ghayathi extensions. Supplying machine
+                operators, drivers, and steel fixers for Bin Hafeez EPC.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between"
+              >
+                <span
+                  class="text-[10px] font-bold uppercase text-slate-500 dark:text-slate-400 tracking-widest"
+                  >2023 - 2024</span
+                >
+                <span class="material-symbols-outlined text-sm text-primary"
+                  >arrow_forward</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="pt-24 pb-12 bg-slate-50 dark:bg-surface-dark border-t border-slate-200 dark:border-white/5 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 animate-fade-in-up"
+      >
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="p-1.5 rounded shadow-sm">
+              <img src="images/logos/logo_petromahra.png" class="w-14" />
+            </div>
+            <span
+              class="text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white"
+              >Petro Mahra</span
+            >
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            General contracting leader providing specialized engineering
+            solutions to the GCC energy sector since 2008.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <h5
+            class="text-slate-900 dark:text-white font-black uppercase tracking-widest text-sm"
+          >
+            Quick Links
+          </h5>
+          <ul
+            class="space-y-4 text-slate-600 dark:text-slate-400 text-sm font-bold"
+          >
+            <li>
+              <a class="hover:text-primary transition-colors" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6 lg:col-span-2">
+          <h5
+            class="text-slate-900 dark:text-white font-black uppercase tracking-widest text-sm"
+          >
+            Regional Offices
+          </h5>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Riyadh, KSA
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 text-xs">
+                +966 13 835 9551<br />admin.ksa@petromahra.com
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Abu Dhabi, UAE
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 text-xs">
+                +971 2 555 0711<br />admin.ae@petromahra.com
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Doha, Qatar
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 text-xs">
+                +974 4418 8955<br />admin.qa@petromahra.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-slate-500 text-xs">
+          © 2026 PETRO MAHRA. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

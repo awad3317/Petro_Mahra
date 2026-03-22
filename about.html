@@ -1,0 +1,653 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <script src="assets/js/theme-toggle.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us | Petro Mahra</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#e42127",
+              "background-light": "#f8f6f6",
+              "background-dark": "#120a0a",
+              "surface-dark": "#1c1111",
+              "accent-dark": "#2d1a1a",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .glass-effect {
+        background: rgba(28, 17, 17, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+      }
+      .delay-100 {
+        animation-delay: 100ms;
+      }
+      .delay-200 {
+        animation-delay: 200ms;
+      }
+      .delay-300 {
+        animation-delay: 300ms;
+      }
+      .delay-400 {
+        animation-delay: 400ms;
+      }
+    </style>
+  </head>
+  <body
+    class="overflow-x-hidden bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white"
+  >
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full z-50 border-b border-black/5 dark:border-white/10 glass-effect bg-white/70 dark:bg-surface-dark/80 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div class=" p-1.5 rounded shrink-0">
+            <img src="images/logos/logo_petromahra.png" class="w-12 sm:w-14" />
+          </div>
+          <span
+            class="text-lg sm:text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white"
+          >
+            Petro Mahra
+          </span>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8 lg:gap-10">
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-xs font-bold text-primary transition-colors uppercase tracking-widest"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="projects.html"
+            >Projects</a
+          >
+          <a
+            class="text-xs font-bold hover:text-primary text-slate-600 dark:text-slate-300 transition-colors uppercase tracking-widest"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-full bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-yellow-400 hover:scale-110 transition-all duration-300 flex items-center justify-center"
+          >
+            <span
+              id="theme-toggle-light-icon"
+              class="material-symbols-outlined !text-[20px] hidden"
+              >light_mode</span
+            >
+            <span
+              id="theme-toggle-dark-icon"
+              class="material-symbols-outlined !text-[20px]"
+              >dark_mode</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative pt-80 pb-60 bg-background-dark overflow-hidden">
+  <div class="absolute inset-0 z-0 opacity-40">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+      <source src="images/about_us.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter mb-4 animate-fade-in-up">
+      About Us
+    </h1>
+    <div class="w-24 h-1.5 bg-primary mx-auto mb-8 animate-fade-in-up"></div>
+    
+    <div class="relative h-12 flex justify-center items-center overflow-hidden">
+        <p id="text-slider" class="text-slate-300 text-xl md:text-2xl font-light tracking-wide transition-all duration-700 ease-in-out transform translate-y-4 opacity-0">
+          Professionals Quality
+        </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // المصفوفة تحتوي على النصوص التي تريدها أن تظهر بالتتابع
+  const messages = [
+    "Professionals Quality",
+    "Brilliant Ideas",
+    "24/7 Assistance",
+    "Strategic Solutions"
+  ];
+
+  let index = 0;
+  const sliderElement = document.getElementById("text-slider");
+
+  function slideText() {
+    // 1. إخفاء النص الحالي (ينزلق للأعلى ويتلاشى)
+    sliderElement.style.opacity = "0";
+    sliderElement.style.transform = "translateY(-20px)";
+
+    setTimeout(() => {
+      // 2. تغيير النص وتجهيزه في الوضع السفلي قبل الظهور
+      index = (index + 1) % messages.length;
+      sliderElement.textContent = messages[index];
+      sliderElement.style.transform = "translateY(20px)";
+
+      // 3. إظهار النص الجديد (ينزلق للمنتصف ويظهر)
+      setTimeout(() => {
+        sliderElement.style.opacity = "1";
+        sliderElement.style.transform = "translateY(0)";
+      }, 50); 
+      
+    }, 700); // زمن يتناسب مع duration-700 في الكلاسات
+  }
+
+  // تشغيل الأنيميشن كل 3 ثوانٍ
+  setInterval(slideText, 3000);
+
+  // إظهار الكلمة الأولى فور تحميل الصفحة
+  window.onload = () => {
+    sliderElement.style.opacity = "1";
+    sliderElement.style.transform = "translateY(0)";
+  };
+</script>
+
+    <!-- GM Message Section -->
+    <section
+      class="py-24 bg-background-light dark:bg-background-dark"
+      id="gm-message"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-5 relative animate-fade-in-up delay-100">
+            <div
+              class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="relative aspect-[4/5] rounded-xl overflow-hidden border border-white/10 group"
+            >
+              <img
+                alt="General Manager"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src="images/seedling.jpg"
+              />
+              <div
+                class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-background-dark to-transparent"
+              >
+                <p
+                  class="text-primary font-bold uppercase tracking-widest text-sm mb-1"
+                >
+                  General Manager
+                </p>
+                <h3 class="text-2xl font-black text-white">
+                  Saeed Mohammed S Almahri
+                </h3>
+                <div
+                  class="flex gap-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <a href="#" class="text-white hover:text-primary"
+                    ><span class="material-symbols-outlined">link</span></a
+                  >
+                  <a href="#" class="text-white hover:text-primary"
+                    ><span class="material-symbols-outlined">share</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 space-y-6 animate-fade-in-up delay-200">
+            <h2
+              class="text-primary font-black uppercase tracking-widest text-sm italic"
+            >
+              Message from the GM
+            </h2>
+            <h3
+              class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight"
+            >
+              A Legacy of Trust and Excellence.
+            </h3>
+            <div class="w-20 h-1.5 bg-primary"></div>
+            <div
+              class="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
+            >
+              <p>
+                Petro Mahra extends support services to Petrochemical, Chemical
+                Industries, and Construction companies by supplying required
+                skilled and semi-skilled workforce, heavy machinery and
+                equipment, and offering heavy transportation services.
+              </p>
+              <p>
+                Over the past years, the following have been the keys to our
+                success:
+              </p>
+              <ul class="list-none space-y-3 mt-4">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-1"
+                    >check_circle</span
+                  >
+                  <span
+                    ><strong>Truly understanding</strong> our customers’
+                    needs.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-1"
+                    >check_circle</span
+                  >
+                  <span
+                    ><strong
+                      >QUALITY workmanship, TIMELY completion and SAFETY</strong
+                    >
+                    records are always primary.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary mt-1"
+                    >check_circle</span
+                  >
+                  <span
+                    ><strong>Support and Trust</strong> of our dedicated and
+                    loyal staff are the elements that combine to make
+                    success.</span
+                  >
+                </li>
+              </ul>
+              <p
+                class="mt-6 italic border-l-4 border-primary pl-4 text-slate-700 dark:text-slate-300"
+              >
+                "Petro Mahra does not only look into the future but also believe
+                that is essential to occasionally look into our past from where
+                we began. We should not expect excellence in the future unless
+                we measure the success of our past, listen to our clients and
+                take the necessary and appropriate actions to meet their needs."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Expert Team Section -->
+    <section
+      class="py-24 bg-slate-50 dark:bg-surface-dark border-t border-slate-200 dark:border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-in-up"
+        >
+          <h2 class="text-primary font-black uppercase tracking-widest text-sm">
+            Leadership
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic uppercase"
+          >
+            Our Expert Team
+          </h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-16 max-w-4xl mx-auto">
+          <!-- Team Member 1 -->
+          <div
+            class="bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-white/5 group animate-fade-in-up delay-100 text-center flex flex-col items-center p-8"
+          >
+            <div
+              class="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-slate-50 dark:border-surface-dark shadow-inner"
+            >
+              <img
+                src="images/seedling.jpg"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                alt="Saeed Mohammed S Almahri"
+              />
+            </div>
+            <h4 class="text-xl font-black text-slate-900 dark:text-white mb-2">
+              Saeed Mohammed S Almahri
+            </h4>
+            <p
+              class="text-primary font-bold text-xs uppercase tracking-widest mb-6"
+            >
+              General Manager
+            </p>
+            <div class="flex gap-4">
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-white/5 group animate-fade-in-up delay-200 text-center flex flex-col items-center p-8"
+          >
+            <div
+              class="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-slate-50 dark:border-surface-dark shadow-inner"
+            >
+              <img
+                src="images/muhammad zahid.jpeg"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                alt="Muhammad Zahid Aziz Muhammad"
+              />
+            </div>
+            <h4 class="text-xl font-black text-slate-900 dark:text-white mb-2">
+              Muhammad Zahid Aziz Muhammad
+            </h4>
+            <p
+              class="text-primary font-bold text-xs uppercase tracking-widest mb-6"
+            >
+              Regional Manager
+            </p>
+            <div class="flex gap-4">
+              <div class="flex gap-2">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:bg-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="pt-24 pb-12 bg-slate-50 dark:bg-surface-dark border-t border-slate-200 dark:border-white/5 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 animate-fade-in-up"
+      >
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="p-1.5 rounded shadow-sm">
+              <img src="images/logos/logo_petromahra.png" class="w-14" />
+            </div>
+            <span
+              class="text-xl font-black tracking-tighter uppercase text-slate-900 dark:text-white"
+              >Petro Mahra</span
+            >
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            General contracting leader providing specialized engineering
+            solutions to the GCC energy sector since 2008.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <h5
+            class="text-slate-900 dark:text-white font-black uppercase tracking-widest text-sm"
+          >
+            Quick Links
+          </h5>
+          <ul
+            class="space-y-4 text-slate-600 dark:text-slate-400 text-sm font-bold"
+          >
+            <li>
+              <a class="hover:text-primary transition-colors" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-primary transition-colors"
+                href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6 lg:col-span-2">
+          <h5
+            class="text-slate-900 dark:text-white font-black uppercase tracking-widest text-sm"
+          >
+            Regional Offices
+          </h5>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Riyadh, KSA
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 text-xs">
+                +966 13 835 9551<br />admin.ksa@petromahra.com
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Abu Dhabi, UAE
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 text-xs">
+                +971 2 555 0711<br />admin.ae@petromahra.com
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-primary font-bold text-xs uppercase">
+                Doha, Qatar
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 text-xs">
+                +974 4418 8955<br />admin.qa@petromahra.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-slate-500 text-xs">
+          © 2026 PETRO MAHRA. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
